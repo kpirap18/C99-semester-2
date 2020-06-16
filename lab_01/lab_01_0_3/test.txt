@@ -1,0 +1,14 @@
+Input height in cm, chest circumference in cm, weight in kg
+158 82 48
+The normal weight of a person 53.98333
+The body mass index 19.22769
+
+Input height in cm, chest circumference in cm, weight in kg
+170 80 60
+The normal weight of a person 56.66667
+The body mass index 20.76124
+
+Input height in cm, chest circumference in cm, weight in kg
+148 54 40
+The normal weight of a person 33.29999
+The body mass index 18.26151

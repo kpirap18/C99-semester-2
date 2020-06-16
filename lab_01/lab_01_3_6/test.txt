@@ -1,0 +1,15 @@
+Input x1, y1, x2, y2, xA, yA
+0 0 5 5 2 7
+0
+
+Input x1, y1, x2, y2, xA, yA
+1 1 1 5 2 2
+2
+
+Input x1, y1, x2, y2, xA, yA
+5 5 5 5 4 7
+Input error
+
+Input x1, y1, x2, y2, xA, yA
+8 8 10 10 9 9
+1

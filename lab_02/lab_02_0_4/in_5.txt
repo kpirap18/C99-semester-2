@@ -1,0 +1,8 @@
+Inpur size of array(intrger) 8
+Element of array 5
+Element of array 5
+Element of array d
+
+
+
+

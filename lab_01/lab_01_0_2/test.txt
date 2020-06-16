@@ -1,0 +1,15 @@
+Input base and height of the trapeziod
+1 2 1
+The perimeter of the trapeziod 5.23607
+
+Input base and height of the trapeziod
+0 5 4
+Input error
+
+Input base and height of the trapeziod
+10 12 5
+The perimeter of the trapeziod 32.19804
+
+Input base and height of the trapeziod
+9 7 1
+The perimeter of the trapeziod 18.82843

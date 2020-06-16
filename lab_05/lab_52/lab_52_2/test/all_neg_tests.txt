@@ -1,0 +1,448 @@
+***TEST SUCCESSFUL***
+
+№1
+in_1.txt
+qqqqq
+qqqqq
+1000
+200
+wwwww
+wwwww
+30
+20
+eeeee
+eeeee
+900
+30
+rrrrr
+rrrrr
+900
+80
+iiiii
+iiiii
+800
+30
+
+out_1.txt
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+wwwww
+wwwww
+30
+20
+
+./main.exe st in_1.txt out_1.txt
+
+№2
+in_2.txt
+qqqqq
+qqqqq
+1000
+20
+eeeee
+eeeee
+2000
+30
+rrrrq
+rrrrr
+300
+200
+wwwqq
+wwwww
+200
+30
+
+out_2.txt
+qqqqq
+qqqqq
+1000
+20
+wwwqq
+wwwww
+200
+30
+
+./main.exe ft in_2.txt qq > out_2.txt
+
+№3
+in_3.txt
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+wwwww
+wwwww
+30
+20
+
+
+in_3_1.txt
+hhhh
+hhhh
+500
+40
+
+---
+in_3.txt
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+hhhh
+hhhh
+500
+40
+wwwww
+wwwww
+30
+20
+
+./main.exe at in_3.txt < in_3_1.txt
+
+***TEST FAILED***
+
+№4
+in_4_5_6.txt:{empty}
+
+./main.exe st in_4_5_6.txt out_4_5_6.txt
+--
+Invalid argument in file
+
+№5
+in_4_5_6.txt:{empty}
+
+./main.exe ft in_4_5_6.txt K
+--
+Invalid argument in file
+
+№6
+in_4_5_6.txt:{empty}
+
+./main.exe at in_4_5_6.txt
+--
+Invalid argument in file
+
+№7
+in_7_8_9.txt:{not exist}
+
+./main.exe st in_7_8_9.txt out_7_8_9.txt
+--
+Open error
+
+№9
+in_7_8_9.txt:{not exist}
+
+./main.exe ft in_7_8_9.txt Iva
+--
+Open error
+
+№10
+in_7_8_9.txt:{not exist}
+
+./main.exe at in_7_8_9.txt
+--
+Open error
+
+№11
+in_11_12_13.txt:
+kkkkk 
+12
+kkkk
+
+./main.exe st in_11_12_13.txt out_11_12_13.txt
+--
+Invalid argument in file
+
+№12
+in_11_12_13.txt:
+kkkkk 
+12
+kkkk
+
+./main.exe ft in_11_12_13.txt Ko
+--
+Invalid argument in file
+
+№13
+in_11_12_13.txt:
+kkkkk 
+12
+kkkk
+
+./main.exe at in_11_12_13.txt
+--
+Invalid argument in file
+
+№14
+in_14.txt:
+oooo
+oooo
+2000
+10
+
+./main.exe ft in_14.txt out_2.txt Ko
+--
+No mathes
+
+***Binary file***
+№1
+in_1.bin
+qqqqq
+qqqqq
+1000
+200
+wwwww
+wwwww
+30
+20
+eeeee
+eeeee
+900
+30
+rrrrr
+rrrrr
+900
+80
+iiiii
+iiiii
+800
+30
+
+out_1.bin
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+wwwww
+wwwww
+30
+20
+
+./main.exe sb in_1.bin out_1.bin
+
+№2
+in_2.bin
+qqqqq
+qqqqq
+1000
+20
+eeeee
+eeeee
+2000
+30
+rrrrq
+rrrrr
+300
+200
+wwwqq
+wwwww
+200
+30
+
+out_2.bin
+qqqqq
+qqqqq
+1000
+20
+wwwqq
+wwwww
+200
+30
+
+./main.exe fb in_2.bin qq > out_2.bin
+
+№3
+in_3.bin
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+wwwww
+wwwww
+30
+20
+
+
+in_3_1.bin
+hhhh
+hhhh
+500
+40
+
+---
+in_3.bin
+qqqqq
+qqqqq
+1000
+200
+rrrrr
+rrrrr
+900
+80
+eeeee
+eeeee
+900
+30
+iiiii
+iiiii
+800
+30
+hhhh
+hhhh
+500
+40
+wwwww
+wwwww
+30
+20
+
+./main.exe ab in_3.bin < in_3_1.bin
+
+№4
+in_4_5_6.bin:{empty}
+
+./main.exe sb in_4_5_6.bin out_5.bin
+--
+Invalid argument in file
+
+№5
+in_4_5_6.bin:{empty}
+
+./main.exe ft in_4_5_6.bin K
+--
+Invalid argument in file
+
+№6
+in_4_5_6.bin:{empty}
+
+./main.exe ab in_4_5_6.bin
+--
+Invalid argument in file
+
+№7
+in_7_8_9.bin:{not exist}
+
+./main.exe sb in_7_8_9.bin out_7.bin
+--
+Open error
+
+№8
+in_7_8_9.bin:{not exist}
+
+./main.exe fb in_7_8_9.bin Iva
+--
+Open error
+
+№9
+in_7_8_9.bin:{not exist}
+
+./main.exe ab in_7_8_9.bin
+--
+Open error
+
+№10
+in_10_11_12.bin:
+ppppp
+2000
+rrrr
+
+./main.exe sb in_10_11_12.bin out_10.txt
+--
+Invalid argument in file
+
+№11
+in_10_11_12.bin:
+ppppp
+2000
+rrrr
+
+./main.exe fb in_10_11_12.bin Ko
+--
+Invalid argument in file
+
+№12
+in_10_11_12.bin:
+ppppp
+2000
+rrrr
+
+./main.exe ab in_10_11_12.bin
+--
+Invalid argument in file
+
+№13
+in_13.bin:
+ppppp
+2000
+rrrr
+
+./main.exe fb in_13.bin Ko
+--
+No mathes
+
+№14
+./main.exe sd test.txt
+---
+Not enough argument

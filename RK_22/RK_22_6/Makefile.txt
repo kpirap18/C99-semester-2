@@ -1,0 +1,16 @@
+CC=gcc
+
+CFLAGS= -c -Wall -Wextra -Werror -std=c99 -pedantic -Wvla
+all:my_fun
+
+my_fun: main.o my_fun.o
+	$(CC) main.o my_fun.o -o my_fun
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.c
+
+my_fun.o: my_fun.c
+	$(CC) $(CFLAGS) my_fun.c
+
+clean:
+	rm -rf *.o my_fun

@@ -1,0 +1,325 @@
+lab_52_1
+
+***TEST SUCCESSFUL***
+
+Format:
+input
+---
+output
+
+№1
+in_1.txt:
+Ivanov 
+Petr 
+3 2 4 5
+Petrov 
+Ivan 
+2 3 2 2
+Sidorov 
+Andrey 
+3 4 5 5
+Ivanov 
+Ivan 
+4 5 3 2
+Kozlova 
+Irina 
+4 5 4 5
+
+./main.exe st in_1.txt
+---
+Ivanov
+Ivan
+4 5 3 2
+Ivanov
+Petr
+3 2 4 5
+Kozlova
+Irina
+4 5 4 5
+Petrov
+Ivan
+2 3 2 2
+Sidorov
+Andrey
+3 4 5 5
+
+№2
+in_2.txt:
+Ivanov 
+Petr 
+3 2 4 5
+Petrov 
+Ivan 
+2 3 2 2
+Sidorov 
+Andrey 
+3 4 5 5
+Ivanov 
+Ivan 
+4 5 3 2
+Kozlova 
+Irina 
+4 5 4 5
+
+./main.exe ft in_2.txt out_2.txt Iv
+---
+out_2.txt:
+Ivanov
+Petr
+3 2 4 5 
+Ivanov
+Ivan
+4 5 3 2 
+
+№3
+in_out_3.txt:
+Ivanov 
+Petr 
+3 2 4 5
+Petrov 
+Ivan 
+2 3 2 2
+Sidorov 
+Andrey 
+3 4 5 5
+Ivanov 
+Ivan 
+4 5 3 2
+Kozlova 
+Irina 
+4 5 4 5
+
+./main.exe dt in_out_3.txt
+---
+in_out_3.txt:
+Sidorov
+Andrey
+3 4 5 5 
+Kozlova
+Irina
+4 5 4 5 
+
+***TEST FAILED***
+
+№4
+in_4_5_6.txt:{empty}
+
+./main.exe st in_4_5_6.txt
+--
+Invalid argument in file
+
+№5
+in_4_5_6.txt:{empty}
+
+./main.exe ft in_4_5_6.txt out_5.txt K
+--
+Invalid argument in file
+
+№6
+in_4_5_6.txt:{empty}
+
+./main.exe dt in_4_5_6.txt
+--
+Invalid argument in file
+
+№7
+in_7_8_9.txt:{not exist}
+
+./main.exe st in_7_8_9.txt
+--
+Open error
+
+№9
+in_7_8_9.txt:{not exist}
+
+./main.exe ft in_7_8_9.txt out_8.txt Iva
+--
+Open error
+
+№10
+in_7_8_9.txt:{not exist}
+
+./main.exe dt in_7_8_9.txt
+--
+Open error
+
+№11
+in_11_12_13.txt:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe st in_11_12_13.txt
+--
+Invalid argument in file
+
+№12
+in_11_12_13.txt:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe ft in_11_12_13.txt out_2.txt Ko
+--
+Invalid argument in file
+
+№13
+in_11_12_13.txt:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe dt in_11_12_13.txt
+--
+Invalid argument in file
+
+№14
+in_14.txt:
+Ivanov 
+Ivan
+12 3 43 3
+
+./main.exe ft in_14.txt out_2.txt Ko
+--
+No mathes
+
+***Binary file***
+№15
+test.bin:
+Ivanov Petr 3 2 4 5
+Petrov Ivan 2 3 2 2
+Sidorov Andrey 3 4 5 5
+Ivanov Ivan 4 5 3 2
+Kozlova Irina 4 5 4 5
+
+./main.exe st test.bin
+--
+Ivanov
+Ivan
+4 5 3 2
+Ivanov
+Petr
+3 2 4 5
+Kozlova
+Irina
+4 5 4 5
+Petrov
+Ivan
+2 3 2 2
+Sidorov
+Andrey
+3 4 5 5
+
+№16
+test.bin:
+Ivanov Petr 3 2 4 5
+Petrov Ivan 2 3 2 2
+Sidorov Andrey 3 4 5 5
+Ivanov Ivan 4 5 3 2
+Kozlova Irina 4 5 4 5
+
+./main.exe ft test.bin out.bin Iv
+--
+Ivanov Petr 3 2 4 5
+Ivanov Ivan 4 5 3 2
+
+№17
+
+test.bin:
+Ivanov Petr 3 2 4 5
+Petrov Ivan 2 3 2 2
+Sidorov Andrey 3 4 5 5
+Ivanov Ivan 4 5 3 2
+Kozlova Irina 4 5 4 5
+
+./main.exe dt test.bin
+--
+Sidorov 
+Andrey 
+3 4 5 5
+Kozlova 
+Irina 
+4 5 4 5
+
+№18
+in_18_19_20.bin:{empty}
+
+./main.exe sb in_18_19_20.bin
+--
+Invalid argument in file
+
+№19
+in_18_19_20.bin:{empty}
+
+./main.exe ft in_18_19_20.bin out_19.bin K
+--
+Invalid argument in file
+
+№20
+in_18_19_20.bin:{empty}
+
+./main.exe db in_18_19_20.bin
+--
+Invalid argument in file
+
+№21
+in_21_22_23.bin:{not exist}
+
+./main.exe sb in_18_19_20.bin
+--
+Open error
+
+№22
+in_21_22_23.bin:{not exist}
+
+./main.exe fb in_21_22_23.bin out_22.bin Iva
+--
+Open error
+
+№23
+in_21_22_23.bin:{not exist}
+
+./main.exe db in_21_22_23.bin
+--
+Open error
+
+№24
+in_24_25_26.bin:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe sb in_24_25_26.bin
+--
+Invalid argument in file
+
+№25
+in_24_25_26.bin:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe ft in_24_25_26.bin out_25.bin Ko
+--
+Invalid argument in file
+
+№26
+in_24_25_26.bin:
+Ivanov 
+12 3 43 3
+Ivan
+
+./main.exe db in_24_25_26.bin
+--
+Invalid argument in file
+
+№27
+in_27.bin:
+Ivanov 
+Ivan
+12 3 43 3
+
+./main.exe fb in_27.bin out_27.bin Ko
+--
+No mathes
+

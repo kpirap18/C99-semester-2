@@ -1,0 +1,89 @@
+/* Вариант 6.
+
+   Создать три текстовых файла f1, f2, f3, содержащих любую информацию.
+   Организовать обмен информацией из этих файлов по схеме f1 -> f2 -> f3 -> f1.
+   Содержимое исходных и измененных файлов вывести на экран.
+*/
+Format
+--- 
+output
+
+
+
+test #1 (все правильно)
+
+---
+In f1.txt before:
+rrrr
+eeee
+ffff
+In f2.txt before:
+wwww
+eeee
+rrrr
+In f3.txt before:
+ddd
+ddd
+fff
+In f1.txt after:
+ddd
+ddd
+fff
+In f2.txt after:
+rrrr
+eeee
+ffff
+In f3.txt after:
+wwww
+eeee
+rrrr
+
+test #2 (файла f1.txt не существует, для f2.txt f3.txt аналогично)
+
+---
+Open error f1.txt or f2.txt or f3.txt
+
+test #3 (Файл f1.txt пустой, аналогично для f2.txt f3.txt)
+
+---
+Invalid argument in f1.txt or f2.txt or f3.txt
+
+test #4 (В файле f1.txt или f2.txt или f3.txt содержится строка
+         превышающая максимальную длину строки (256 символов))
+(Я рассмотрела данный тест как некорректные данные)
+
+---
+Invalid argument in f1.txt or f2.txt or f3.txt
+
+test #5 (В каком-лио файле есть пустая строка (то есть только \n), при этом 
+	 пустая строка расположена в начале или середине)
+(В данном примере в f2 такая строка первая, а в f3 третья по счету, и за ней 
+ идет еще одна строка)
+
+---
+In f1.txt before:
+wwww
+eeee
+rrrr
+In f2.txt before:
+
+fff
+fff
+In f3.txt before:
+rrrr
+eeee
+
+ffff
+In f1.txt after:
+rrrr
+eeee
+
+In f2.txt after:
+wwww
+eeee
+rrrr
+In f3.txt after:
+
+fff
+fff
+

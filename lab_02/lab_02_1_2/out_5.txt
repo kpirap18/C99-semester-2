@@ -1,0 +1,1 @@
+Inpur size of array(intrger) Element of array Element of array Input error

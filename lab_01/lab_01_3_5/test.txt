@@ -1,0 +1,16 @@
+Input A and B:
+24 36
+NOD(a,b) = 12
+
+Input A and B:
+12 36
+NOD(a,b) = 12
+
+Input A and B:
+0 5
+Input error
+
+Input A and B:
+-1 8
+Input error
+

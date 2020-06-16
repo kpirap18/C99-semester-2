@@ -1,0 +1,6 @@
+Inpur size of array(intrger) 4
+Element of array 2
+Element of array 2
+Element of array 2
+Element of array 2
+

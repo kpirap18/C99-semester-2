@@ -1,0 +1,42 @@
+
+Format: 
+№N
+$ Командная строка
+Данные файла
+
+вывод
+
+№1 
+$ ./main.exe text.txt
+7.2 4 1 3 2 -9.8 1 b
+
+2.500000
+
+№2
+$ ./main.exe text.txt
+1.1 1.1 1.1 1.1 1.1 1.1 h
+
+Input error
+
+№3
+$ ./main.exe text.txt
+1.4 7.5 -7.2 8.25 4 1 9 s
+
+4.416667
+
+№4
+$ ./main.exe text.txt
+qwe
+
+Logic error
+
+№5
+$ ./main.exe
+
+
+main.exe <source file>
+
+№6
+$ ./main.exe text.wer
+
+Could not open text.txter because of No such file or directory

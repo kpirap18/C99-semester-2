@@ -1,0 +1,2 @@
+Inpur size of array(intrger) 4.26
+Element of array 

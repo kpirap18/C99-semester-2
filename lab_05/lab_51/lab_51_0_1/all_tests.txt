@@ -1,0 +1,58 @@
+
+Format: 
+№N
+input
+
+output
+
+**TEST SUCCESFULLY**
+№1 
+7 8 -8 7 4 -2 9 -1 77 s
+
+77
+
+№2
+-8 -7 4 -2 1 0 0 1 5 ^Z
+
+4
+
+№10
+-8 7 a
+
+7
+
+**TEST ERROR**
+№3
+7 8 4 1 52 4 2 s
+
+Logic error
+
+№4
+-8 -9 -4 -5 -2 -3 s
+
+Logic error
+
+№5
+0.24
+
+Input error
+
+№6
+-8.5
+
+Input error
+
+№7
+qwe
+
+No input data
+
+№8
+-4 0 -8 0 -7 0 -9 0 a
+
+Logic error
+
+№10
+7 4 1 -8 d
+
+Logic error

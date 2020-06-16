@@ -1,0 +1,11 @@
+Input s
+65
+The count bottle 1
+
+Input s
+80
+The count bottle 2
+
+Input s
+100
+The count bottle 3

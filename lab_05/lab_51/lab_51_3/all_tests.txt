@@ -1,0 +1,144 @@
+***TESTS SUCCESSFULLY***
+
+# Запись файла
+№1  
+./main.exe c 8 test1.bin
+
+В файле в бинарном представлении:
+41 67 34 0 69 24 78 58
+
+№2 
+./main.exe c 15 test2.bin
+
+В файле в бинарном представлении: 
+41 67 34 0 69 24 78 58 62 64 5 45 81 27 61
+
+# Вывод файла, созданного ранее
+№3 
+./main.exe p test1.bin
+
+Вывод: 41 67 34 0 69 24 78 58
+
+№4 
+./main.exe p test2.bin
+
+Вывод: 41 67 34 0 69 24 78 58 62 64 5 45 81 27 61
+
+# Сортировка файла, созданного ранее 
+№5 
+./main.exe s test1.bin
+
+В файле в бинарном представлении: 
+0 24 34 41 58 67 69 78
+
+№5 
+./main.exe s test2.bin
+
+В файле в бинарном представлении: 
+0 5 24 27 34 41 45 58 61 62 64 67 69 78 81
+
+# Вывод отсортированного файла для проверки сортировки
+№6
+./main.exe p test1.bin
+
+Вывод: 0 24 34 41 58 67 69 78
+
+№7
+./main.exe p test2.bin
+
+Вывод: 0 5 24 27 34 41 45 58 61 62 64 67 69 78 81
+
+
+***TESTS FAILED***
+
+# Недостаток аргументов
+№1
+./main.exe
+
+Выход: main.exe <command> [<number>] <source file>
+
+№2
+./main.exe k.bin
+
+Выход: main.exe <command> [<number>] <source file>
+
+№3
+./main.exe c 4
+
+Выход: Not enough arguments
+
+№4
+./main.exe c kib.bin
+
+Выход: Not enough arguments
+
+# Избыток аргументов
+№5
+./main.exe c kib.bin 34 df.bin
+
+Выход: main.exe <command> [<number>] <source file>
+
+# Неверная команда
+№6
+./main.exe w test.bin
+
+Выход: Not enough arguments
+
+# Небинарный файл
+№7
+./main.exe s text.txt
+
+Выход: Open error
+
+# Нецелое число для заполнения файла
+№8
+./main.exe c 15.5 t.bin  
+
+Выход: Write error
+
+# Число для заполнения = 0
+№9
+./main.exe c 0 test.bin
+
+Выход: Write error
+
+# Число для заполнения - буква
+№10
+./main.exe c g test.bin
+
+Выход: Write error
+
+# Число для заполнения < 0
+№11
+./main.exe c -8 test.bin
+
+Выход: Write error
+
+# Указан несуществующий файл для вывода содержимого файла
+№12
+./main.exe p test.bin
+
+Вывод: Open error
+
+# Указан пустой файл для сортировки содержимого файла
+№13
+./main.exe p test_emp.bin
+
+Вывод: Open error
+
+# Указан несуществующий файл для сортировки содержимого файла
+№14
+./main.exe p test.bin
+
+Вывод: Open error
+
+# Указан пустой файл для сортировки содержимого файла
+№15
+./main.exe p test_emp.bin
+
+Вывод: Open error
+
+
+
+
+

@@ -1,0 +1,3 @@
+Inpur size of array(intrger) 7
+Element of array 4025.45
+Element of array 

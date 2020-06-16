@@ -1,0 +1,69 @@
+**TEST SUCCESFULLY**
+№1 (нормальный тест, слова раздлены пробелами и несколько одинаковых слов)
+qwe rty asd qwe fgh
+
+Result: qwe asd rty qwe
+
+
+№2 (нормальный тест, слова разделены символами-разделителями, 
+заканчивается символам-разделитетем)
+qw;.,.;jfwr;.,stestssss second qw
+
+Result: second stet jfwr
+
+
+№3 (начинается и заканчивается символам-разделитетем)
+;,.iuf oi qwe kjf qwe.,
+
+Result: kjf oi iuf
+
+
+№4 (однинаковые слово)
+test test,.,.test.,;test
+
+Result: tes
+
+
+№5 (все слова разные)
+a b.c.h.s?w?r p n a b s a
+
+Result: s b n p r w s h c b
+
+
+№6 (одно слово)
+qwe.
+
+Result: qwe
+
+№7 (есть цифры)
+2qw12 test 7iu7 sem 2
+
+Result: sem 7iu tes 2qw1
+
+
+**TEST ERROR**
+№8 (при вводе просто нажимаештся Enter)
+  
+//  вводится '\n'
+
+No string
+
+
+№9 (только символами-разделители)
+;,.?!.,
+
+No string
+
+
+№10 (длинное слово)
+qwertyuiolkjhgfds kj df
+
+Invalid input
+
+
+№11 (длинная строка)
+qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrtttttttttttttttttttttttttttttttttttttttttttttttyyyyyyyyyyyyyyyyyyyyyyyyy 
+
+Input error
+
+

@@ -1,0 +1,17 @@
+Input X and EPS
+1 0.01
+S(x) = 0.790300
+F(x) = 0.785398
+F(x)-S(x) = 0.004901
+(F(x)-S(x))/F(x) = 0.006241
+
+Input X and EPS
+0 0.001
+S(x) = 0.000000
+F(x) = 0.000000
+F(x)-S(x) = 0.000000
+(F(x)-S(x))/F(x) = 0.000000
+
+Input X and EPS
+5 0.01
+Input error
